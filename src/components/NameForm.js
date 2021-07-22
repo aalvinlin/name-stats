@@ -11,6 +11,15 @@ export const NameForm = () => {
 
     const handleSubmit = event => {
         
+        const API_URL = ""
+
+        axios.get(API_URL + "?" + userInput)
+            .then(result => {
+                console.log(result);
+            })
+            .catch(error => {
+                console.error(error);
+            })
     }
 
     return (
